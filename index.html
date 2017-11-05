@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>商品登记入库</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/layer/layer.js"></script>
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+	<script src="./js/main.js"></script>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-xs-12 header">
+			<p class="text-center">仓库商品信息</p>
+			<span>
+				<img src="./images/headlogo.png">仓库管理员
+			</span>
+		</div>
+	</div>
+	<!-- 表单 -->
+	<div class="row">
+			<form class="proForm text-center" onsubmit="return judgeInfo()" method="post">
+					<div class="col-sm-12">
+						商品名称:
+						<input type="text" id="proName" name="proName">
+						<span class="tips"><font>*</font>(必须)</span>
+					</div>
+					<div class="col-sm-12">
+						商品类别:
+						<input type="text" id="proType" name="proType">
+						<span class="tips"><font>*</font>(必须)</span>
+					</div>
+					<div class="col-sm-12">
+						商品数量:
+						<input type="text" id="proNum" name="proNum">
+						<span class="tips"><font>*</font>(必须)</span>
+					</div>
+					<div class="col-sm-12">
+						商品价格:
+						<input type="text" id="proPrice" name="proPrice">
+						<span class="tips"><font>*</font>(必须)</span>
+					</div>
+					<div class="col-sm-12">
+						出厂年月:
+						<input type="text" id="proDate" name="proDate">
+						<span class="tips"><font>*</font>(必须)</span>
+					</div>
+					<button type="submit" class="btn">提交信息</button>
+			</form>
+	</div>
+	<!-- footer -->
+	<div class="row">
+	<div class="col-sm-12 text-center foot">
+		<i class="fa fa-code"></i> With <i class="fa fa-heart"></i>
+	</div>
+	</div>
+</div>
+</body>
+</html>
